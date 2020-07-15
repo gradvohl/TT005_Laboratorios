@@ -29,7 +29,7 @@ Cada equipe deve providenciar, no diretório raiz do repositório, um arquivo ``
 - Nomes, matrículas e emails dos componentes da equipe.
 
 **Observação**:
-- Cuidado para não sobrescrever este arquivo ``README.md`` e perder as instruções originais. Renomeie este arquivo antes de criar o ``README.md`` com as infromações do grupo.
+- Cuidado para não sobrescrever este arquivo ``README.md`` e perder as instruções originais. Renomeie este arquivo para ``instrucoes.md`` antes de criar o ``README.md`` com as infromações do grupo.
 
 ## Avaliação do trabalho
 O trabalho será avaliado seguindo os passos a seguir:
