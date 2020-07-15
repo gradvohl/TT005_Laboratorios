@@ -24,3 +24,4 @@ O trabalho será avaliado seguindo os passos a seguir:
 	- Se o programa ``diff`` não apontar diferenças, então considera-se que o programa está correto. Caso haja diferenças significativas, o programa está errado e a equipe perderá os pontos desse trabalho.
 5. Se estiver tudo certo com o programa, o código e o relatório serão analisados para verificar se está tudo conforme o especificado no trabalho e se os resultados são coerentes. Em seguida, uma nota será atribuída para esse trabalho.
 
+Detalhes: https://www.gnu.org/software/libc/manual/html_node/Getopt.html
