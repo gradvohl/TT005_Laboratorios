@@ -11,5 +11,5 @@ O arquivo makefile contém as instruções para compilar e gerar os programas. P
 
 
 ```
-./programa -y <numero de linhas> -v <numero de colunas> -w <numero de colunas>   -A <arquivo A> -B <arquivo B> -C <arquivo C> -D <arquivo D> -t <numero de threads>
+./programa -y <numero de linhas> -v <numero de colunas> -w <numero de colunas> -A <arquivo A> -B <arquivo B> -C <arquivo C> -D <arquivo D> -t <numero de threads>
 ```
