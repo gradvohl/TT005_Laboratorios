@@ -7,7 +7,7 @@ Os grupos podem aterar e adicionar informações nesse repositório, mas a estru
 - :file_folder: bin: código fonte compilado.
 
 **Observações:** 
-- O relatório no formato ``.pdf`` referente a esse projeto deve estar no direório raiz deste repositório.
+- O relatório no formato ``.pdf`` referente a esse projeto deve estar no diretório raiz deste repositório.
 - As equipes devem se assegurar que os diretórios contenham apenas os códigos fonte e **não contenham** os arquivos com as matrizes, pois ao clonar ou copiar os repositórios, as matrizes podem ocupar bastante espaço. O professor utilizará as próprias matrizes para a avaliação.
 
 ## Avaliação do trabalho
