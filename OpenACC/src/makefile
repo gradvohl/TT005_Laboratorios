@@ -9,7 +9,7 @@
 CC=gcc
 # 
 # Parametro para compilacao OpenMP
-LIB=-fopenmp
+LIB=-fopenacc
 #
 # Arquivos fonte
 FONTES=exemplo.c

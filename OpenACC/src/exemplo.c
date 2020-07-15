@@ -1,21 +1,23 @@
+#include <stdlib.h>
 
-// OpenMP program to print Hello World 
-// using C language 
-  
-// OpenMP header 
-#include <omp.h> 
-#include <stdio.h> 
-#include <stdlib.h> 
-  
-int main(int argc, char* argv[]) 
-{ 
-  
-    // Beginning of parallel region 
-    #pragma omp parallel 
-    { 
-  
-        printf("Hello World... from thread = %d\n", 
-               omp_get_thread_num()); 
-    } 
-    // Ending of parallel region 
-} 
+void saxpy(int n, float a, float *x, float *restrict y)
+{
+
+    #pragma acc parallel loop
+    for (int i = 0; i < n; ++i)
+        y[i] = a * x[i] + y[i];
+}
+
+int main(int argc, char **argv) {
+    int N = 1<<20; // 1 million floats
+    if (argc > 1)
+        N = atoi(argv[1]);
+    float *x = (float*)malloc(N * sizeof(float));
+    float *y = (float*)malloc(N * sizeof(float));
+    for (int i = 0; i < N; ++i) {
+        x[i] = 2.0f;
+        y[i] = 1.0f;
+    }
+    saxpy(N, 3.0f, x, y);
+    return 0;
+}
