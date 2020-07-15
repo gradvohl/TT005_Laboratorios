@@ -2,7 +2,7 @@
 
 Nesse diretório estão os códigos fontes para alguns programas que podem auxiliar neste e nos demais laboratórios (trabalhos). 
 
-Além dos arquivos arquivos fontes com códigos em C, há também um ``makefile`` para compilar esses arquivos. Sugere-se que os alunos observem os códigos fontes, bem como o arquivo ``makefile``, de modo que possam usar estratégias parecidas para implementar as soluções para o trabalho.
+Além dos arquivos arquivos fontes com códigos em C, há também um ``makefile`` para compilar esses arquivos. **Sugere-se que os alunos observem os códigos fontes, bem como o arquivo ``makefile``, de modo que possam usar estratégias parecidas para implementar as soluções para o trabalho.**
 
 ## Programas nesse diretório
 

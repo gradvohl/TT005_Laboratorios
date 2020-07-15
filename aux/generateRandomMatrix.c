@@ -59,9 +59,9 @@ int main (int argc, char **argv)
      case 0:
      case 1:
      case 2:
-         fprintf(stderr, "Uso:\n\t %s <numero de linhas> <numero de colunas>\n or", argv[0]);
-         fprintf(stderr, "\n\t %s <numero de linhas> <numero de colunas> <output file>\n or", argv[0]);
-         fprintf(stderr, "\n\t %s <numero de linhas> <numero de colunas> <minimo> <maximo>\n or", argv[0]);
+         fprintf(stderr, "Uso:\n\t %s <numero de linhas> <numero de colunas>\n ou", argv[0]);
+         fprintf(stderr, "\n\t %s <numero de linhas> <numero de colunas> <arquivo de saida>\n ou", argv[0]);
+         fprintf(stderr, "\n\t %s <numero de linhas> <numero de colunas> <minimo> <maximo>\n ou", argv[0]);
          fprintf(stderr, "\n\t %s <numero de linhas> <numero de colunas> <minimo> <maximo> <arquivo de saida>\n", argv[0]);
 
          exit(EXIT_FAILURE);
