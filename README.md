@@ -6,6 +6,7 @@ Os grupos podem aterar e adicionar informações nesse repositório, mas a estru
 - :file_folder: src: código fonte do projeto.
 - :file_folder: bin: código fonte compilado.
 - :file_folder: aux: arquivos e programas auxiliares.
+- :file_folder: exemplos: alguns arquivo e programas exemplos para ajudar aos alunos.
 
 ## Informações necessárias no repositório
 Cada grupo deve providenciar, no diretório principal do repositório, um arquivo ``Readme.md`` com as seguintes informações:
