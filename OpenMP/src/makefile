@@ -13,14 +13,21 @@ LIB=-fopenmp
 #
 # Arquivos fonte
 FONTES=exemplo.c
+#
+# Arquivos objeto
 OBJETOS=$(FONTES:.c=.o)
+#
+# Diretorio onde o programa sera gerado
+DIRETORIOPROGRAMA=../bin
+#
+# Nome do programa
 EXECUTAVEL=programa
 
 #Dependencias de Compilacao
 all: $(EXECUTAVEL)
 
 programa: exemplo.c
-	$(CC) $(LIB) $(FONTES) -o programa
+	$(CC) $(LIB) $(FONTES) -o $(DIRETORIOPROGRAMA)/programa
 
 #Limpeza
 clean:
