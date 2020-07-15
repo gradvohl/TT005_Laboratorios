@@ -19,13 +19,14 @@ A estrutura base de cada diretório principal é formada pelos seguintes diretó
 
 **Observações:** 
 - O relatório no formato ``.pdf`` referente a cada laboratório deve estar no direório raiz de cada diretório principal.
-- Os grupos podem aterar e adicionar informações dentro desses diretórios principais, mas os diretórios src e bin devem ser preservados.
+- As equipes podem aterar e adicionar informações dentro desses diretórios principais, mas os diretórios src e bin devem ser preservados.
+- As equipes devem se assegurar que os diretórios **não contenham** os arquivos com as matrizes, pois ao clonar ou copiar os repositórios, as matrizes podem ocupar bastante espaço. O professor utilizará as próprias matrizes para a avaliação.
 
 ## Informações necessárias no repositório
-Cada grupo deve providenciar, no diretório principal do repositório, um arquivo ``README.md`` com as seguintes informações:
+Cada equipe deve providenciar, no diretório principal do repositório, um arquivo ``README.md`` com as seguintes informações:
 
-- Nome do grupo
-- Nomes, matrículas e emails dos componentes do grupo.
+- Nome da equipe
+- Nomes, matrículas e emails dos componentes da equipe.
 
 ## Avaliação do trabalho
 O trabalho será avaliado seguindo os passos a seguir:
@@ -33,7 +34,6 @@ O trabalho será avaliado seguindo os passos a seguir:
 2. Em seguida, vai entrar no diretório ``<laboratório>/src`` e executar o comando ``makefile``.
 	- O comando makefile deverá gerar o arquivo executável que será utilizado para rodar o programa no diretório ``<laboratorio>/bin``.
 3. Depois, o professor executará o programa com seus próprios parâmetros, que estarão de acordo com o proposto no trabalho.
-4. O arquivo de saída do programa do grupo será comparada com o arquivo de saída gerado pelo  programa de referência do professor com o comando ``diff`` do Linux :penguin:.
+4. O arquivo de saída do programa da equipe será comparada com o arquivo de saída gerado pelo  programa de referência do professor com o comando ``diff`` do Linux :penguin:.
 	- Se o programa ``diff`` não apontar diferenças, então considera-se que o programa está correto. Caso haja diferenças significativas, o programa está errado e a equipe perderá os pontos desse trabalho.
 5. Se estiver tudo certo com o programa, o código e o relatório serão analisados para verificar se está tudo conforme o especificado no trabalho e se os resultados são coerentes. Em seguida, uma nota será atribuída para esse trabalho.
-
