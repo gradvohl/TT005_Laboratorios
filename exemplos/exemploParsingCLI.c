@@ -25,6 +25,17 @@ int main (int argc, char *argv[])
   char *nomeArqD = NULL;
   int y, v, w, t;
 
+
+  // Verifica se o número de argumentos esta correto
+  if (argc == 1 || argc != 17)
+  {
+     fprintf(stderr,"Uso:\n");
+     fprintf(stderr,"\t%s -y <numero de linhas> -v <numero de colunas> -w <numero de colunas> \\ \n", argv[0]);
+     fprintf(stderr,"\t\t   -A <arquivo A> -B <arquivo B> -C <arquivo C> -D <arquivo D> -t <numero de threads>\n");
+     return 1;
+  }
+
+  // Analisa os parâmetros enviados pela linha de comando
   while ((opt = getopt(argc, argv, "A:B:C:D:y:v:w:t:")) != -1) 
   {
     switch(opt) {
