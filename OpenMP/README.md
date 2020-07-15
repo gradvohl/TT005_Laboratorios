@@ -5,16 +5,10 @@ Este repositório contém as informações  necessárias para a realização do 
 Os grupos podem aterar e adicionar informações nesse repositório, mas a estrutura base de diretórios a seguir deve ser mantida. A estrutura é a seguinte:
 - :file_folder: src: código fonte do projeto.
 - :file_folder: bin: código fonte compilado.
-- :file_folder: aux: arquivos e programas auxiliares.
-- :file_folder: exemplos: alguns arquivos e programas exemplos para ajudar aos alunos.
 
-**Observação:** O relatório no formato ``.pdf`` referente a esse projeto deve estar no direório raiz deste repositório.
-
-## Informações necessárias no repositório
-Cada grupo deve providenciar, no diretório principal do repositório, um arquivo ``README.md`` com as seguintes informações:
-
-- Nome do grupo
-- Nomes, matrículas e emails dos componentes do grupo.
+**Observações:** 
+- O relatório no formato ``.pdf`` referente a esse projeto deve estar no direório raiz deste repositório.
+- As equipes devem se assegurar que os diretórios contenham apenas os códigos fonte e **não contenham** os arquivos com as matrizes, pois ao clonar ou copiar os repositórios, as matrizes podem ocupar bastante espaço. O professor utilizará as próprias matrizes para a avaliação.
 
 ## Avaliação do trabalho
 O trabalho será avaliado seguindo os passos a seguir:
