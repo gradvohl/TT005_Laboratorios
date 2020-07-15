@@ -5,6 +5,10 @@
  * Nesse programa em particular, o uso é o seguinte:
  *
  * ./programa -y 10 -v 12 -w 11 -t 4  -A arqA.dat -B arqB.dat -C arqC.dat -D arqD.dat
+ *
+ * Autor Andre Leon S. Gradvohl, Dr.
+ *
+ * Ultima atualizacao: Sex 13 Out 2017 19:23:49 -03
  */
 
 #include <stdio.h>
