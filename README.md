@@ -12,3 +12,13 @@ Cada grupo deve providenciar, no diretório principal do repositório, um arquiv
 
 - Nome do grupo
 - Nomes, matrículas e emails dos componentes do grupo.
+
+## Avaliação do trabalho
+O trabalho será avaliado seguindo os passos a seguir:
+1. O professor vai clonar o repositório na máquina local.
+2. Em seguida, vai entrar no diretório ``<seu_repositório>/src`` e executar o comando ``makefile``.
+	- O comando makefile deverá gerar o arquivo executável que será utilizado para rodar o programa.
+3. Depois, o professor executará o programa com seus próprios parâmetros, que estarão de acordo com o proposto no trabalho.
+4. O arquivo de saída do programa do grupo será comparada com o arquivo de saída gerado pelo  programa de referência do professor com o comando ``diff`` do Linux :penguin:.
+	- Se o programa ``diff`` não apontar diferenças, então considera-se que o programa está correto. Caso haja diferenças significativas, o programa está errado e a equipe perderá os pontos desse trabalho.
+5. Se estiver tudo certo com o programa, o código e o relatório serão analisados para verificar se está tudo conforme o especificado no trabalho e se os resultados são coerentes. Em seguida, uma nota será atribuída para esse trabalho.
