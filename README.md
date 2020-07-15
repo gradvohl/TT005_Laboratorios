@@ -18,15 +18,18 @@ A estrutura base de cada diretório principal é formada pelos seguintes diretó
 - :file_folder: bin: código fonte compilado.
 
 **Observações:** 
-- O relatório no formato ``.pdf`` referente a cada laboratório deve estar no direório raiz de cada diretório principal.
+- O relatório no formato ``.pdf`` referente a cada laboratório deve estar no diretório raiz de cada diretório principal.
 - As equipes podem aterar e adicionar informações dentro desses diretórios principais, mas os diretórios src e bin devem ser preservados.
 - As equipes devem se assegurar que os diretórios **não contenham** os arquivos com as matrizes, pois ao clonar ou copiar os repositórios, as matrizes podem ocupar bastante espaço. O professor utilizará as próprias matrizes para a avaliação.
 
 ## Informações necessárias no repositório
-Cada equipe deve providenciar, no diretório principal do repositório, um arquivo ``README.md`` com as seguintes informações:
+Cada equipe deve providenciar, no diretório raiz do repositório, um arquivo ``README.md`` com as seguintes informações:
 
 - Nome da equipe
 - Nomes, matrículas e emails dos componentes da equipe.
+
+**Observação**:
+- Cuidado para não sobrescrever este arquivo ``README.md`` e perder as instruções originais. Renomeie este arquivo antes de criar o ``README.md`` com as infromações do grupo.
 
 ## Avaliação do trabalho
 O trabalho será avaliado seguindo os passos a seguir:
