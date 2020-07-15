@@ -13,3 +13,6 @@ O arquivo makefile contém as instruções para compilar e gerar os programas. P
 ```
 ./programa -y <numero de linhas> -v <numero de colunas> -w <numero de colunas> -A <arquivo A> -B <arquivo B> -C <arquivo C> -D <arquivo D> -t <numero de threads>
 ```
+
+Nesse programa, utilizou-se a função ``getopt`` para fazer a análise e obtenção dos parâmetros da linha de comando (CLI). Para mais detalhes sobre como usar essa função acesse o site https://www.gnu.org/software/libc/manual/html_node/Getopt.html.
+
