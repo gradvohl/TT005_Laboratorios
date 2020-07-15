@@ -8,8 +8,10 @@ Os grupos podem aterar e adicionar informações nesse repositório, mas a estru
 - :file_folder: aux: arquivos e programas auxiliares.
 - :file_folder: exemplos: alguns arquivo e programas exemplos para ajudar aos alunos.
 
+**Observação:** O relatório referente a esse projeto deve estar no direório raiz deste repositório.
+
 ## Informações necessárias no repositório
-Cada grupo deve providenciar, no diretório principal do repositório, um arquivo ``Readme.md`` com as seguintes informações:
+Cada grupo deve providenciar, no diretório principal do repositório, um arquivo ``README.md`` com as seguintes informações:
 
 - Nome do grupo
 - Nomes, matrículas e emails dos componentes do grupo.
