@@ -23,3 +23,4 @@ O trabalho será avaliado seguindo os passos a seguir:
 4. O arquivo de saída do programa do grupo será comparada com o arquivo de saída gerado pelo  programa de referência do professor com o comando ``diff`` do Linux :penguin:.
 	- Se o programa ``diff`` não apontar diferenças, então considera-se que o programa está correto. Caso haja diferenças significativas, o programa está errado e a equipe perderá os pontos desse trabalho.
 5. Se estiver tudo certo com o programa, o código e o relatório serão analisados para verificar se está tudo conforme o especificado no trabalho e se os resultados são coerentes. Em seguida, uma nota será atribuída para esse trabalho.
+
