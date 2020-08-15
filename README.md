@@ -4,8 +4,8 @@ Este repositório contém as informações  necessárias para a realização dos
 ## Estrutura básica do repositório
 O repositório está dividido em três diretórios principais:
 - :file_folder: OpenMP: diretório para o 1º trabalho, sobre o OpenMP.
-- :file_folder: MPI: diretório para o 2º trabalho, sobre o MPI.
-- :file_folder: OpenACC: diretório para o 3º trabalho sobre o OpenACC.
+- :file_folder: OpenACC: diretório para o 2º trabalho sobre o OpenACC.
+- :file_folder: MPI: diretório para o 3º trabalho, sobre o MPI.
 
 Além dos diretórios principais, há outros dois diretórios auxiliares descritos a seguir:
 - :file_folder: aux: arquivos e programas auxiliares.
