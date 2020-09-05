@@ -1,7 +1,10 @@
 /**
- * Programa MPI para exemplificar 
+ * Programa MPI para exemplificar a troca de mensanges
+ * entre processos MPI.
  *
  * Autor: Andre Leon S. Gradvohl
+ *
+ * Ultima atualizacao 5/Setembro/2020 14:50
  */  
 #include "mpi.h"
 #include <stdio.h>
@@ -97,7 +100,7 @@ int main (int argc, char *argv[])
    rc = MPI_Send(masterArray, tamanho, MPI_INT, destino, tag, MPI_COMM_WORLD);
 
    // Aloca memoria para poder receber os dados.
-   if ((workerArray= (int *) malloc(sizeof(int) * tamanho)) == NULL)
+   if ((workerArray=(int *) malloc(sizeof(int) * tamanho)) == NULL)
    {
      perror("Problemas na alocacao do workerArray no master");
      exit(EXIT_FAILURE);
@@ -108,6 +111,7 @@ int main (int argc, char *argv[])
 
    printf("Imprimindo o vetor invertido: ");
    imprime(workerArray, tamanho);
+   free(workerArray);
  }
  // Senao, se for o worker 
  else if (rank == 1) 

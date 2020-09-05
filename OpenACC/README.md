@@ -1,4 +1,4 @@
-# Laboratório de OpenMP
+# Laboratório de OpenACC
 Este repositório contém as informações  necessárias para a realização do laboratório sobre OpenACC na disciplina TT005 -- Tópicos em Telecomunicações -- Programação de Alto Desempenho. A estrutura deste repositório deve ser usada como base para a entrega do 2º trabalho da disciplina.
 
 ## Estrutura básica do repositório
