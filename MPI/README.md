@@ -1,5 +1,5 @@
-# Laboratório de OpenMP
-Este repositório contém as informações  necessárias para a realização do laboratório sobre OpenACC na disciplina TT005 -- Tópicos em Telecomunicações -- Programação de Alto Desempenho. A estrutura deste repositório deve ser usada como base para a entrega do 2º trabalho da disciplina.
+# Laboratório de MPI
+Este repositório contém as informações  necessárias para a realização do laboratório sobre MPI na disciplina TT005 -- Tópicos em Telecomunicações -- Programação de Alto Desempenho. A estrutura deste repositório deve ser usada como base para a entrega do 3º trabalho da disciplina.
 
 ## Estrutura básica do repositório
 Os grupos podem aterar e adicionar informações nesse repositório, mas a estrutura base de diretórios a seguir deve ser mantida. A estrutura é a seguinte:
