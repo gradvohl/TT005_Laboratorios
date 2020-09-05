@@ -71,7 +71,7 @@ int main (int argc, char *argv[])
 {
  int quantProcs, rank, destino, fonte, rc, quantidade, tag=1;
 
- int masterArray = {0, 1, 2, 3, 4}; 
+ int masterArray[] = {0, 1, 2, 3, 4}; 
  unsigned int tamanho = 5;
  int *workerArray;
  int *vetorInvertido;
@@ -94,24 +94,31 @@ int main (int argc, char *argv[])
    fonte = 1;
 
    // Envia o vetor para o worker.
-   rc = MPI_Send(vetor, tamanho, MPI_INT, destino, tag, MPI_COMM_WORLD);
+   rc = MPI_Send(masterArray, tamanho, MPI_INT, destino, tag, MPI_COMM_WORLD);
+
+   // Aloca memoria para poder receber os dados.
+   if ((workerArray= (int *) malloc(sizeof(int) * tamanho)) == NULL)
+   {
+     perror("Problemas na alocacao do workerArray no master");
+     exit(EXIT_FAILURE);
+   }
 
    // Aguarda para receber o vetor do worker.
-   rc = MPI_Recv(vetor, tamanho, MPI_INT, fonte, tag, MPI_COMM_WORLD, &Stat);
+   rc = MPI_Recv(workerArray, tamanho, MPI_INT, fonte, tag, MPI_COMM_WORLD, &Stat);
 
    printf("Imprimindo o vetor invertido: ");
-   imprime(vetor, tamanho);
+   imprime(workerArray, tamanho);
  }
  // Senao, se for o worker 
  else if (rank == 1) 
  {
-   dest = 0;
+   destino = 0;
    fonte = 0;
   
    // Aloca memoria para poder receber os dados. 
    if ((workerArray= (int *) malloc(sizeof(int) * tamanho)) == NULL)
    {
-     perror("Problemas na alocacao do workerArray");
+     perror("Problemas na alocacao do workerArray no worker");
      exit(EXIT_FAILURE);
    } 
 
@@ -122,7 +129,7 @@ int main (int argc, char *argv[])
    vetorInvertido = inverte(workerArray, tamanho);
   
    // Envia o vetor invertido para o master.
-   rc = MPI_Send(vetorInvertido, tamanho, MPI_INT, dest, tag, MPI_COMM_WORLD);
+   rc = MPI_Send(vetorInvertido, tamanho, MPI_INT, destino, tag, MPI_COMM_WORLD);
 
    // Libera a memoria alocada.
    free(workerArray);
