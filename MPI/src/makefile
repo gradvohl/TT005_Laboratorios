@@ -9,7 +9,7 @@
 CC=mpicc
 # 
 # Arquivos fonte
-FONTES=exemplo.c
+FONTES=exemploBasico.c
 #
 # Arquivos objeto
 OBJETOS=$(FONTES:.c=.o)
@@ -23,7 +23,7 @@ EXECUTAVEL=programa
 #Dependencias de Compilacao
 all: $(EXECUTAVEL)
 
-programa: exemplo.c
+programa: ${FONTES}
 	$(CC) $(FONTES) -o $(DIRETORIOPROGRAMA)/programa
 
 #Limpeza
