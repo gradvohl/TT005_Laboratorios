@@ -12,7 +12,7 @@ CC=gcc
 LIB=-fopenmp
 #
 # Arquivos fonte
-FONTES=exemplo2.c
+FONTES=exemplo1.c
 #
 # Arquivos objeto
 OBJETOS=$(FONTES:.c=.o)
