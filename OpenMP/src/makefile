@@ -12,7 +12,7 @@ CC=gcc
 LIB=-fopenmp
 #
 # Arquivos fonte
-FONTES=exemplo.c
+FONTES=exemplo2.c
 #
 # Arquivos objeto
 OBJETOS=$(FONTES:.c=.o)
@@ -26,7 +26,7 @@ EXECUTAVEL=programa
 #Dependencias de Compilacao
 all: $(EXECUTAVEL)
 
-programa: exemplo.c
+programa: $(FONTES)
 	$(CC) $(LIB) $(FONTES) -o $(DIRETORIOPROGRAMA)/programa
 
 #Limpeza
