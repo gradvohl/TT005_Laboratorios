@@ -6,7 +6,7 @@ int main(void) {
   
   printf("Ola Mundo OpenACC\n");
   devtype = acc_get_device_type();
-  printf("Nummero de dispositivos OpenACC disponiveis: %d\n", acc_get_num_devices(devtype));
+  printf("Numero de dispositivos OpenACC disponiveis: %d\n", acc_get_num_devices(devtype));
   printf("Tipo de dispositivos OpenACC disponiveis: %d\n", devtype);
 
   return 0;
