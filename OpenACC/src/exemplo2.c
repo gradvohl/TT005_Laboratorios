@@ -29,7 +29,7 @@ void imprime10(float *y)
 }
 
 int main(int argc, char **argv) {
-    int N = 1<<20; // 1 million floats
+    int N = 1<<20; // N = 2^20 = 1048576
     if (argc > 1)
         N = atoi(argv[1]);
     float *x = (float*)malloc(N * sizeof(float));
