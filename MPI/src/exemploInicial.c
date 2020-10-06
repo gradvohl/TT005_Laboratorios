@@ -1,23 +1,24 @@
- #include "mpi.h"
- #include <stdio.h>
+#include "mpi.h"
+#include <stdio.h>
 
- int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) 
+{
  int  numtasks, rank, len, rc; 
  char hostname[MPI_MAX_PROCESSOR_NAME];
 
- // initialize MPI  
+ // Inicializa o MPI  
  MPI_Init(&argc,&argv);
 
- // get number of tasks 
+ // Obtem o numero de tarefas
  MPI_Comm_size(MPI_COMM_WORLD,&numtasks);
 
- // get my rank  
+ // Obtem meu rank (identificador do processo)
  MPI_Comm_rank(MPI_COMM_WORLD,&rank);
 
- // this one is obvious  
+ // Obtem o nome do processador (nome da maquina onde o processo sera executado)
  MPI_Get_processor_name(hostname, &len);
- printf ("Number of tasks= %d My rank= %d Running on %s\n", numtasks,rank,hostname);
+ printf ("Numero de tarefas = %d Meu rank= %d Rodando em %s\n", numtasks,rank,hostname);
 
- // done with MPI  
+ // Finaliza o MPI  
  MPI_Finalize();
 }
