@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
   MPI_Waitall(4, reqs, stats);
   
   printf("Sou o processo: %d. Da esquerda, recebi: %d, da direita, recebi %d\n",
-	  rank, prev, next);
+	  rank, buf[0], buf[1]);
 
   MPI_Finalize();
   return 0;
