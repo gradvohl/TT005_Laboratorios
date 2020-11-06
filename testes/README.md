@@ -5,7 +5,9 @@ Nesse diretório estão alguns arquivos que podem ser utilizados como testes par
 - `arqC_991x1.dat`: Arquivo com a terceira matriz (matriz C). As dimensões dessa matriz são 991 linhas por 1 coluna.
 - `resposta.dat`: Arquivo com a resposta para a operação D = (A x B) x C.
 
-- `compara.sh`: *Script* para comparação dos arquivo de resposta com o arquivo gerado pelo seu programa. Para executar esse script, utilize a seguinte linha de comando:
+- `compara.sh`: *Script* para comparação dos arquivo de resposta com o arquivo gerado pelo seu programa. Para executar esse *script*, utilize a seguinte linha de comando:
 `./compara.sh resposta.dat seuArquivoResposta.dat`
 
-A propósito, nesse exemplo o resultado da operação de redução da matriz D retornará `-4129376.518921`.
+Neste exemplo o resultado da operação de redução da matriz D retornará `-4129376.518921`.
+
+A propósito, as matrizes têm dimensões com números primos e, propositalmente, com valores diferentes para linhas e colunas para também testar a questão da generalização.
